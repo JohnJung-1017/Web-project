@@ -1,5 +1,6 @@
 import React from 'react'
-import Banner from './banner';
+import Banner from '../components/banner';
+import "../css/main.css";
 
 const Main = () => {
   return (
