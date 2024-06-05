@@ -4,11 +4,13 @@ import { auth } from '../firebase/fbinstance';
 import { useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import '../css/login.css';
+import SignUpModal from '../components/signUpModal';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showSignUp, setShowSignUp] = useState(false);
   const navigate = useNavigate();
 
   const onSubmit = async (e) => {
@@ -19,6 +21,14 @@ const Login = () => {
     } catch (err) {
       setError('아이디 혹은 비밀번호가 잘못되었습니다.');
     }
+  };
+
+  const openSignUpModal = () => {
+    setShowSignUp(true);
+  };
+
+  const closeSignUpModal = () => {
+    setShowSignUp(false);
   };
 
   return (
@@ -57,14 +67,17 @@ const Login = () => {
                             className='login_button'
                             type="submit"
                             value="Login"/>
-                        <input
+                        <button
                             className='login_button'
-                            type="submit"
-                            value="Create Account"/>
+                            type="button"
+                            onClick={openSignUpModal}>
+                            Create Account
+                        </button>
             </form>
             {error && <p className='login_error'>{ "아이디 혹은 비밀번호가 잘못되었습니다." }</p>}
         </div>
       </div>
+      <SignUpModal show={showSignUp} onClose={closeSignUpModal} />
     </div>
   )
 }
