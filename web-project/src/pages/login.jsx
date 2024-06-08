@@ -35,7 +35,6 @@ const Login = () => {
     <div className='login_background'>
       <div className='login_container'>
         <div className='login_box1'>
-          <h2>사진 들어갈거임</h2>
         </div>
         <div className='login_box2'>
           <h2 className='login_title'>객지분 프로젝트 <br/> 오늘 뭐먹지?</h2>
