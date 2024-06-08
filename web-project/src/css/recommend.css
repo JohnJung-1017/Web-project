@@ -1,0 +1,45 @@
+.recommend_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    height: 66vh;
+}
+.recommend_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 13vw;
+    height: 55vh;
+    margin: 1vw;
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: white;
+}
+.recommend_category{
+    font-size: 5vh;
+    margin-top: 0;
+}
+.recommend_button{
+    margin-top: 12vh;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 20px;
+    border: none;
+    background-color: orange;
+}
+.recommend_button:hover{
+    background-color: rgb(255, 111, 0);
+}
+.recommend_output{
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.recommend_output_menu{
+    font-size: 10vh;
+}

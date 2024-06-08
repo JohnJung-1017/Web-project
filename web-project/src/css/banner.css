@@ -1,0 +1,42 @@
+.banner{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 234, 44);
+}
+.banner_title{
+    position: absolute;
+    left: 3vw;
+    font-size: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.bannerMenu{
+    text-decoration: none;
+    font-size: 4vh;
+    padding: 10px;
+    margin-left: 8vw;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(118, 118, 118);
+}
+.bannerMenu:hover{
+    color: rgb(203, 203, 203);
+}
+.logout_button{
+    position: absolute;
+    right: 5vw;
+    border-radius: 10px;
+    height: 4vh;
+    width: 6vw;
+    color: white;
+    background-color: orange;
+    border: none;
+}
+.logout_button:hover{
+    background-color: rgb(255, 111, 0);
+}
